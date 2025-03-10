@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 5</title>
+    <link rel="stylesheet" href="styles.css"   
+</head>
+
+<body style="align-items: center; padding: 20px; display: flex; flex-direction: column;">
+
+    <header style="display: flex;">
+        <img src="https://lemniscateacademico.odoo.com/web/image/325-8f1aa984/logo%20Lemniscate%20CURVAS.png" width="200px" >
+        <h1 style="margin: auto; font-family: Helvetica; font-size: 40px; padding: 30px;">Lemniscate Solutions SAS</h1>
+        <!--<h2>Capacitaciones sin límites</h2>-->
+
+    </header>
+   
+    <section>
+        <br>
+        <form>
+            <fieldset style="width: 700px;">
+                <legend>Datos del Usuario</legend>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" placeholder="Ingrese su usuario" value="pedro" size="12" required>
+            <label>Contraseña:</label>
+            <input type="password" placeholder="Ingrese su contraseña" maxlength="4" size="17" required>
+            <label for="correo">Correo:</label>
+            <input type="email" name="correo">
+        </fieldset>
+        <br><br>
+        <fieldset style="width: 700px;">
+            <legend>Preferencias</legend>
+            <h2>Preferencias del usuario</h2>
+            <label for="pago">Método de pago:</label>
+            <input type="radio" name="pago" checked>Tarjeta
+            <input type="radio" name="pago">Efectivo
+            <input type="radio" name="pago">Transferencia
+            
+            <br><br>
+            <label>Seleccione sus habilidades:</label>
+            <input type="checkbox">Javascript
+            <input type="checkbox">Python
+            <input type="checkbox">PHP
+            <input type="checkbox">JAVA
+            <br><br>
+            <hr>
+            <label for="deportes"><b>Seleccione un deporte:</b></label>
+            <select name="deportes">
+                <option value="1">Fútbol</option>
+                <option value="2">Baseball</option>
+                <option value="3">Basketball</option>
+                <option value="4">Voleyball</option>
+            </select>
+            <label for="descripcion">Agregue una descripción</label>
+            <textarea name="descripcion" rows="6" cols="9"></textarea>
+            <input type="submit" value="enviar información">
+            <button>Guardar</button>
+             </fieldset>
+        </form>
+    </section>
+ 
+</body>
+</html>
